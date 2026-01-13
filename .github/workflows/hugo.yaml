@@ -24,12 +24,10 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install Node deps
+      - name: Install Node dependencies
         run: |
           cd docs
-          npm init -y
-          npm ci || npm install
-          npm install postcss postcss-cli autoprefixer
+          npm ci
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -37,9 +35,9 @@ jobs:
           hugo-version: "latest"
           extended: true
 
-      - name: Build site
+      - name: Build Hugo site
         run: |
-           hugo --source docs --minify --gc
+          hugo --source docs --minify --gc
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
@@ -51,6 +49,9 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
-      - name: Deploy to Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
