@@ -24,6 +24,7 @@ languages:
 params:
   author: "Shivam Saini"
   description: "GitOps-driven DevSecOps labs."
+  keywords: ["DevSecOps","DevOps security","Kubernetes security","CI/CD security","Hugo"]
   offlineSearch: true
   siteName: "DevSecOps - Shivam Saini"
 
@@ -53,7 +54,6 @@ menu:
       weight: 30
 outputs:
   home:
-    - HTML
     - RSS
     - SITEMAP
 sitemap:

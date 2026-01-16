@@ -4,8 +4,6 @@ type: docs
 toc: false
 ---
 
-
-
 Welcome to my **DevSecOps Knowledge Base**.
 
 I am a security and DevSecOps enthusiast focused on building, securing, and automating modern cloud-native systems.  

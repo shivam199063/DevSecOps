@@ -1,0 +1,12 @@
+{{ if .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "description": "{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}",
+  "author": { "@type": "Person", "name": "{{ .Site.Params.author }}" },
+  "mainEntityOfPage": "{{ .Permalink }}"
+}
+</script>
+{{ end }}
