@@ -1,8 +1,9 @@
 ---
-title: "Deep Dive: How eBPF Works"
+title: "How eBPF Works"
 description: "Understanding Hooks, Maps, and the eBPF Architecture."
 type: docs
 toc: true
+weight: 1
 ---
 
 ## The Three Pillars of eBPF

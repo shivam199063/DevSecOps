@@ -11,6 +11,6 @@ Welcome to my **DevSecOps Knowledge Base**.
 
 - **DevOps** → Platform & Kubernetes tooling
 - **Security** → Wazuh, Nuclei, DefectDojo, hardening
-- **Development** → Go & automation services
+- **Development** → Development of different technologies
 
 > 🧪 Tested primarily on **Minikube**
