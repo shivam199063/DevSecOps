@@ -5,7 +5,6 @@ theme: "docsy"
 
 enableGitInfo: true
 enableRobotsTXT: true
-canonifyURLs: true
 
 module:
   proxy: "direct"
@@ -34,7 +33,6 @@ params:
   ui:
     sidebar_menu_compact: true
     sidebar_search_disable: false
-    breadcrumb_disable: false
 
 markup:
   goldmark:
