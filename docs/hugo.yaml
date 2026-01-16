@@ -52,10 +52,6 @@ menu:
     - name: Development
       url: "/development/"
       weight: 30
-outputs:
-  home:
-    - RSS
-    - SITEMAP
 sitemap:
   changefreq: "weekly"
   priority: 0.5
